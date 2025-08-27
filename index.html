@@ -1,16 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jequiti</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 19 - Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-    </style>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">Jequiti</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/contato.html">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-    
-</body>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://jequiti.vtexassets.com/assets/vtex.file-manager-graphql/images/b6890a61-68f2-469d-a94e-ccc99dd9a4af___cd27444322d655885f5531838f1b04c7.png"
+            alt="Primeiro Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://jequiti.vtexassets.com/assets/vtex.file-manager-graphql/images/f88841e3-b028-403f-a87f-63d5f33fcb81___fdea3b9d9a31963c5afdf9223ee16001.png"
+            alt="Segundo Slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://jequiti.vtexassets.com/assets/vtex.file-manager-graphql/images/169968b2-5866-422b-9d00-7c81af52214c___a2aa50b8f2273ec5631304e2d61a5b72.png"
+            alt="Terceiro Slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="row cardlist">
+        <div class="col col-md-3 cardinfo">
+          <i class="bi-cash"></i>
+          <div class="card-container">
+            <h5>Quer mais Desconto?</h5>
+            <h6>+ 5% de Descontp no PIX!</h6>
+          </div>
+        </div>
+        <div class="col col-md-3 cardinfo">
+          <i class="bi-truck"></i>
+          <div class="card-container">
+            <h5>Frete gratis para TODO BRASIL</h5>
+            <h6>*Compras a partir de R$ 99,90</h6>
+          </div>
+        </div>
+        <div class="col col-md-3 cardinfo">
+          <i class="bi-ticket"></i>
+          <div class="card-container">
+            <h5>Cupons IMPERDÍVEIS!</h5>
+            <h6>Desconto para toda a família</h6>
+          </div>
+        </div>
+        <div class="col col-md-3 cardinfo">
+          <i class="bi-credit-card"></i>
+          <div class="card-container">
+            <h5>Parcele em até 6x sem juros*</h5>
+            <h6>Parcela mínima de R$30</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex justify-content-center align-items-center">
+      <p>Jequiti @ 2025</p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>
